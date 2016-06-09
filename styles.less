@@ -1,0 +1,125 @@
+// "out": "styles.css", "compress": false
+* {
+  box-sizing: border-box;
+}
+
+/*body {
+  background-color: #ffd;
+}
+
+#wrapper {
+  width: 1000px;
+  background-color: white;
+  margin: 0px auto 0px auto;
+}*/
+
+.default {
+  font-size: 20px;
+  font-family: "Georgia", serif;
+  line-height: 150%;
+}
+
+.field {
+  &:extend(.default);
+  border-width: 0px 0px 2px 0px;
+  border-color: #aaa;
+  border-style: solid;
+  outline: none;
+  &:focus {
+    border-color: #666;
+  }
+  height: 23px;
+  margin: 0px;
+}
+
+.number_input {
+  //&:extend(.input);
+  padding: 0px 5px 0px 5px;
+	text-align: right;
+  width: 150px;
+  //width: -webkit-fit-content;
+  //max-width: 500px;
+  //min-width: 100px;
+}
+
+.unit_input {
+  //&:extend(.input);
+  padding: 0px 25px 0px 5px;
+  margin: 0px;
+  width: 130px;
+}
+
+/*.reset {
+  &:extend(.default);
+  border-width: 0px 0px 0px 0px;
+  border-color: #aaa;
+  color: #aaa;
+  border-style: solid;
+  background: none;
+  padding: 2px;
+  width: 25px;
+  height: 25px;
+  margin: 0px;
+  font-size: 18px;
+  text-align: center;
+  //color: transparent;
+  &:hover,&:focus {
+    border-width: 2px 2px 2px 2px;
+    padding: 0px;
+    //border-color: #666;
+    color: #666;
+  }
+  outline: none;
+}*/
+
+.button.reset_field {
+  margin: 0px 0px 0px -30px;
+}
+
+.button.swap_button {
+  margin-right: -30px;
+  width: 30px;
+  position: relative;
+  top: -20px;
+  left: -28px;
+  font-size: 150%;
+}
+
+.button {
+  &:extend(.default);
+  margin: 0px 0px 0px 0px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+
+  border-width: 0px 0px 0px 0px;
+  border-color: #aaa;
+  color: #aaa;
+  border-style: solid;
+  background: none;
+
+  font-size: 18px;
+  text-align: center;
+
+  &:hover,&:focus {
+    //border-width: 2px 2px 2px 2px;
+    //padding: 0px;
+    //border-color: #666;
+    color: #000;
+  }
+  &:active {
+    color: #aaa;
+  }
+  outline: none;
+}
+
+#results {
+  &:extend(.default);
+  margin: 20px 0px 0px 10px;
+}
+
+#about {
+  &:extend(.default);
+  margin: 200px 0px 0px 10px;
+  width: 600px;
+}
