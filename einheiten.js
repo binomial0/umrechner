@@ -84,7 +84,7 @@ unitgroups = [
   {
     type: "temperature",
     units: [
-      new Unit('Kelvin', 'V', 1),
+      new Unit('Kelvin', 'K', 1),
       new Unit('Ono', 'o', 0.87329)
     ]
   },
